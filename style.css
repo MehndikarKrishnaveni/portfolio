@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #dde6ed;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* !header  */
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #13161a;
+    color: #dde6ed;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#h-d1{
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+nav>a{
+    color: #cad5db;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 7px 15px;
+    text-decoration: none;
+}
+
+nav>a:hover{
+    color: #eaeef0;
+    border-bottom: 3px solid #10699f;
+}
+/* !header ends  */
+
+main{
+    background-color: #13161a;
+    padding-top: 90px ;
+}
+section {
+    width: 95%;
+    margin: 1px 0;
+    height: 650PX;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #13161a;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#s1-d1{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    animation: intro 3s;
+}
+
+@keyframes intro {
+    from{
+        left: 80px;
+    }
+    to{
+        left: 150px;
+    }
+}
+
+ .p1{    /* iam */
+    font-size: 45px;
+    display: inline;
+}
+
+#name{  
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: #10699f;
+}
+
+#s1-d1>a{
+    border: 1px solid transparent;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color:#10689fc8 ;
+}
+
+#s1-d1>a:hover{
+    width: 100px;
+    background-color: #10699f;
+}
+
+#photo{
+    position: absolute;
+    border-radius: 50%;
+    height: 350px;
+    right: 200px;
+    /* right: -19px; */
+    width: 350px;
+    top: 140px;
+    /* top: 100px; */
+    background-image: url(./files/myphoto.jpg);
+    background-position: 0px 0px 0px 57px;
+    background-size: cover;
+    box-shadow: 0px 0px 20px rgb(96, 91, 91);
+    animation: pic 6s;
+    opacity: 0.8;
+}
+
+@keyframes pic {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.8;
+    }
+}
+
+
+/* !sec1 ends  */
+
+/* !section2 */
+
+#about{
+    padding-top: 80px;
+}
+
+#s2-d1{
+    margin-left: 50px;
+    /* border: 1px solid white; */
+    width: 600px;
+    position: absolute;
+    top: 130px;
+}
+
+td:first-child{
+    color: #10699f;
+    font-weight: bold;
+}
+
+#s2-d2{
+    position: absolute;
+    right: 90px;
+    top: 170px;
+}
+
+.bar{
+    margin: 10px 0px;
+    width: 500px;
+    height: 10px;
+    background-color: gray;
+}
+
+#html,#css{
+    height: 100%;
+    width: 95%;
+    background-color: #10699f;
+}
+
+#java{
+    height: 100%;
+    width: 85%;
+    background-color: #10699f;
+}
+
+#sql{
+    height: 100%;
+    width: 90%;
+    background-color: #10699f;
+}
+/* !sec2 ends  */
+
+/* !education s3  */
+#education{
+    padding-top: 80px;
+}
+
+#education>h1{
+    animation: headings 5s;
+}
+
+#edu-d1{
+    height: 80%;
+    width: 2px;
+    background-color: gray;
+    margin: auto;
+    animation: vline 1s;
+}
+
+#education i{
+    color: #10699f;
+    position: absolute;
+    top: 180px;
+    left: 49.2%;
+    /* border: 1px solid white; */
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #cad5db;
+    animation: icon 5s;
+    /* animation-iteration-count: 3; */
+}
+
+#education #i2{
+    top: 320px;
+}
+
+#education #i3{
+    top: 460px;
+}
+
+#btech{
+    position: absolute;
+    top: 180px;
+    right: 170px;
+    animation: btech 5s ;
+    animation-iteration-count: 3;
+}
+
+#diploma{
+    position: absolute;
+    top: 320px;
+    left: 150px;
+    text-align: right;
+    animation: diploma 5s ;
+    animation-iteration-count: 3;
+}
+
+#ssc{
+    position: absolute;
+    top: 460px;
+    right: 330px;
+    animation: ssc 5s ;
+    animation-iteration-count: 3;
+
+}
+
+@keyframes ssc {
+    from
+    {
+        position: absolute;
+        right: 280px;
+    }
+    to{
+        position: absolute;
+        right: 330px;
+    }
+}
+@keyframes btech {
+    from
+    {
+        position: absolute;
+        right: 120px;
+    }
+    to{
+        position: absolute;
+        right: 170px;
+    }
+}
+@keyframes diploma {
+    from
+    {
+        position: absolute;
+        left: 100px;
+    }
+    to{
+        position: absolute;
+        left: 150px;
+    }
+}
+
+@keyframes icon {
+    from
+    {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes vline{
+    from
+    {
+        height: 0px;
+    }
+    to{
+        height: 80%;
+    }
+}
+/* !education ends  */
+
+/* !cv  */
+#resume{
+    height: 400px;
+    padding-top: 80px;
+}
+#resume-d1{
+    /* border: 1px solid; */
+    width: 400px;
+    height: 190px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#resume-d1>h1{
+    animation: headings 5s;
+    /* animation-delay: 2s; */
+}
+
+#resume-d1>a{
+    /* border: 1px solid white; */
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #10699f;
+    font-weight: bold;
+}
+
+#resume-d1>a:hover{
+    box-shadow: 0px 0px 5px white;
+}
+/* !resume ends  */
+
+/* !projects */
+#projects{
+    padding-top: 80px;
+}
+
+#projects>h1{
+    animation: headings 5s;
+}
+
+#proj-d1,.proj-d1{
+    height: 400px;
+    width: 91%;
+    margin: auto;
+    border-top: 5px solid rgba(255, 255, 255, 0.187);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project{
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    transition: all 2s;
+}
+
+.title{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid; */
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 15px #14608e; */
+    background-color: #10689f78;
+    z-index: 1;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .title:hover{
+    z-index: 0;
+} */
+
+.project:hover{
+    z-index:  0;
+}
+
+#proj-d2{
+    position: absolute;
+    top: 185px;
+    /* background-color: aqua; */
+    left: 66px;
+}
+
+.desc{
+    height: 70%;
+    width: 41%;
+    background-color:#14608e ;
+    transition: background-color 2s;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 20px #14608e; */
+    opacity: 0;
+    z-index: 0;
+}
+
+.desc:hover{
+    opacity: 1;
+    z-index: 1;
+}
+
+.desc>p{
+    margin: 20px;
+}
+/* !project end  */
+
+/* !contact  */
+#contact{
+    height: 500px;
+    padding-top: 80px;
+}
+
+#contact-d1{
+    height: 100px;
+    width: 20%;
+    /* border: 1px solid; */
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact-d1 a>i{
+    color: #10699f;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255,0.1);
+}
+
+#contact-d1 a>i:hover{
+    box-shadow: 0px 0px 5px #10699f;
+}
+@keyframes headings{
+    from
+    {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
+
